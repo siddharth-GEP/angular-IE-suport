@@ -1,0 +1,22 @@
+:root {
+    /* DEMO: options.preserveVars */
+    // --background: url(image.jpg);
+    --background-color: beige;
+    --color: red;
+    --unknown:24px;
+  }
+  
+  .test {
+    /* DEMO: options.preserveStatic */
+    display: block;
+    
+    /* DEMO: options.updateURLs */
+    background: var( --background-color);
+    
+    /* DEMO: options.variables */
+    color: var(--color);
+    
+    /* Demo: Fallback */
+    font-size: var(--unknown, 16px);
+  }
+  
