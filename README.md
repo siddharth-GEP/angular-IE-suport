@@ -1,18 +1,24 @@
-# Test
+# Angular IE11+ Support Mod
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or  `ng serve --configuration es5`    for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Architecture And Purpose
+
+This App is designed to run on IE11+ Browser while supporting `SASS/LESS` rendering on ` IE11 with Angular 8 Support`
+THis architecture supports modern browser along with IE11 .
+`tsconfig.es5.json`and `tsconfig.app.json` are added in the folder structure to enable support for ES5.
+It also uses polyfill referenced in `package.json`
+
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
